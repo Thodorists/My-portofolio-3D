@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+.container{
+    position: absolute;
+    font-size: 5rem;
+    transition: all linear 1s;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border: salmon solid;
+}
+.container h5{
+    position: absolute;
+    align-self: center;
+    font-size: 27px;
+    color: white;
+    animation: translate 5s linear infinite;
+    transition: all linear 1s;
+}
+.container i{
+    color: white;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    animation: translate 3s linear infinite;
+    transition: all linear 2s;
+}
+
+@keyframes translate {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        -webkit-transform: translateY(20%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.home{
+    position: absolute;
+    top: 7%;
+    left: 23%;
+    font-size: 60px;
+}
+.home h6{
+    font-size: 27px;
+    display: none;
+    margin-top: 12%;
+}
+.home:hover{
+    h6{
+        display: flex;
+    }
+}
+.homepage{
+    color: white;
+    border: gray dotted 10px;
+    height: 100%;
+    width: 65%;
+    position: absolute;
+    right: 0;
+    transition: all linear 1s;
+    transform: translateX(130%)  scale(0.5);
+}
+.contact{
+    position: absolute;
+    bottom: 6%;
+    font-size: 50px;
+}
+.contact h6{
+    font-size: 27px;
+    display: none;
+}
+.contact:hover{
+    h6{
+        display: flex;
+    }
+}
+.contactpage{
+    color: white;
+    border: gray dotted 10px;
+    height: 100%;
+    width: 65%;
+    position: absolute;
+    right: 0;
+    transition: all linear 1s;
+    transform: translateX(130%) scale(0.5);
+}
+.services{
+    position: absolute;
+    font-size: 50px;
+    align-self: center;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.services h6{
+    font-size: 27px;
+    margin-top: 12%;
+    display: none;
+}
+.services:hover{
+    h6{
+        display: flex;
+    }
+}
+.servicespage{
+    color: white;
+    border: gray dotted 10px;
+    height: 100%;
+    width: 65%;
+    position: absolute;
+    right: 0;
+    transition: all linear 1s;
+    transform: translateX(130%) scale(0.5);
+}
+.about{
+    position: absolute;
+    font-size: 60px;
+    align-self: center;
+    right: 3%;
+}
+.about h6{
+    font-size: 27px;
+    display: none;
+}
+.about:hover{
+    h6{
+        display: flex;
+    }
+}
+.aboutpage{
+    color: white;
+    border: gray dotted 10px;
+    height: 100%;
+    width: 65%;
+    position: absolute;
+    right: 0;
+    transition: all linear 1s;
+    transform: translateX(130%) scale(0.5);
+}
+.projects{
+    position: absolute;
+    font-size: 45px;
+    align-self: center;
+    right: 25%;
+    top: 8%;
+}
+.projects h6{
+    font-size: 27px;
+    margin-top: 12%;
+    display: none;
+}
+.projects:hover{
+    h6{
+        display: flex;
+    }
+} 
+.projectspage{
+    color: white;
+    border: gray dotted 10px;
+    height: 100%;
+    width: 65%;
+    position: absolute;
+    right: 0;
+    transition: all linear 1s;
+    transform: translateX(130%) scale(0.5);
+}
+.arrowback{
+    position: absolute;
+    left: 1%;
+    top: 0;
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .container{
+        height: 450px;
+        width: 450px;
+    }
+}

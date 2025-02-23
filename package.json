@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "gltf-loader": "^1.0.0",
+    "three": "^0.173.0",
+    "three-css2drender-types": "^1.0.3",
+    "threejs-orbit-controls": "^1.0.3"
+  }
+}

@@ -1,0 +1,35 @@
+#canvas2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#canvas3{
+    width: 10%;
+    height: 10%;
+}
+.homepage{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.homepage::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.homepage::-webkit-scrollbar-thumb {
+    background: yellow;
+    border-radius: 10px;
+
+}
+
+.homepage::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2); 
+} 
+@media (max-width: 1024px) {
+    .homepage{
+        width: 100%;
+        right: 0;
+    }
+}
